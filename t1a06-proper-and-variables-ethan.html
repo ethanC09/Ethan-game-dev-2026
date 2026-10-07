@@ -1,23 +1,26 @@
-sdfgh
-<meta charset="utf-8">
-<title>t1a06-proper-and-variables-ethan.html</title>
-</style> 
-function sayhello() { 
-mynum =3;
-mystring = 'hello ';
-myfloat =17.5;
-mybool = true; 
-myout = document.getELementBYID('myDiv01');
-myOut.innerHTML = myNum + mystring + myfloat + ',' + myBool;
-if (myBool) {myOut.innerHTML += ', wow';}
-}
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>t1a06-proper-and-variables-ethan.html</title>
+    <script>
+        function sayhello() {
+            let myNum = 3;
+            let myString = 'hello ';
+            let myFloat = 17.5;
+            let myBool = true;
+            let myOut = document.getElementById('myDiv01');
+            
+            myOut.innerHTML = myNum + myString + myFloat + ',' + myBool;
+            if (myBool) {
+                myOut.innerHTML += ', wow';
+            }
+        }
+    </script>
 </head>
 <body>
-<p>This is <B>bold</B> text.</p>
-  <button onclick="sayhello()">Click me</button>
-  <div id="myDiv01">...</div>
+    <p>This is <B>bold</B> text.</p>
+    <button onclick="sayhello()">Click me</button>
+    <div id="myDiv01">...</div>
 </body>
 </html>
-
-
