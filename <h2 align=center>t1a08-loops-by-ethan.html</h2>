@@ -18,3 +18,30 @@ myDog = new myAnimal('snickers', 5)
 myDog.myShow()
 }">
 <div id="myDiv01">...</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Class Example</title>
+</head>
+<body>
+
+    <input type="button" value="Example Class set and show class animal" onClick="{
+        class MyAnimal {
+            constructor(passName, passAge) {
+                this.myName = passName;
+                this.myAge = passAge;
+            }
+            myShow() {
+                document.getElementById('myDiv01').innerHTML = 'Hello ' + this.myName + '. You are ' + this.myAge + ' years old<br>';
+            }
+        }
+        
+        const myDog = new MyAnimal('Snickers', 5);
+        myDog.myShow();
+    }">
+    
+    <div id="myDiv01">...</div>
+
+</body>
+</html>
