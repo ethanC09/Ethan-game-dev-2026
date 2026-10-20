@@ -1,1 +1,20 @@
-
+<a href="">Find a good reference to javascript Classes<?a><br>
+Classes are both Objects that store variables (called Poroperties) and Functions
+that work on the variables (called Methhods)
+<h4> Exampel working Classes code</h4>
+nothing: <input type=text id="mytext01" value="Useless at the moment"><br>
+<input type=button value="Exampel Class set and show calss animal" onClick="{
+calss myAnimal {
+constructor(passName, passage) {
+this.myname = passName;
+this.myAge = passAge;
+}
+myShow(){
+documents.getElementById('myDiv').innerHTML = 'Hello '+ this.myName + this.myName + '. You
+are ' + this.myAge + ' years old<br>'
+}
+} // end calass myAnimal
+myDog = new myAnimal('snickers', 5)
+myDog.myShow()
+}">
+<div id="myDiv01">...</div>
