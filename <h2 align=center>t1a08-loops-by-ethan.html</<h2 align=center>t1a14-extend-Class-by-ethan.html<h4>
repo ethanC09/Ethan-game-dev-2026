@@ -18,4 +18,52 @@ myDog.myShow()
 Noting: <input type=text id="myText01" value="Useless at the momment"><br>
 class myCat extends myAnimal {
 myShow()}
-documents.get ElementsById('Div').innerHTML
+documents.get ElementsById('Div').innerHTML = this.myName + ' is a great cat<br>'
+}
+}  // end exended class myCat
+let myPet = new myCat('Fluffy', 14)
+myPet.myShow()
+}"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Examples</title>
+</head>
+<body>
+
+<script>
+class myAnimal {
+    constructor(passName, passAge) {
+        this.myName = passName;
+        this.myAge = passAge;
+    }
+    myShow() {
+        document.getElementById('myDiv').innerHTML = 'Hello ' + this.myName + '<br>';
+    }
+} // end class myAnimal
+
+class myCat extends myAnimal {
+    myShow() {
+        document.getElementById('myDiv').innerHTML = this.myName + ' is a great cat<br>';
+    }
+} // end extended class myCat
+</script>
+
+<h4>Example working Classes code</h4>
+<input type="button" value="Example Class Set and Show Class Animal" onclick="
+    let myDog = new myAnimal('Snickers', 5);
+    myDog.myShow();
+">
+
+<h4>Example extending Class code</h4>
+Noting: <input type="text" id="myText01" value="Useless at the moment"><br>
+<input type="button" value="Example Extended Class Cat" onclick="
+    let myPet = new myCat('Fluffy', 14);
+    myPet.myShow();
+">
+
+<div id="myDiv">...</div>
+
+</body>
+</html>
+<div id="myDiv">...</div>
