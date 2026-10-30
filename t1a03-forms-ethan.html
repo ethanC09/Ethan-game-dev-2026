@@ -1,8 +1,47 @@
-<font color=blue> Prove you can use: Forms</font><br>
-The following are all form elments (add to them):<br>
-Enter Your First Name:<input type=text id"myText01" value="Ethan"><br>
-Checkbox: <br>
-Beef:<input type=checkbox><br>
-Veggy: <input type=checkbox><br>
-Radio Buttons:<br>
-107.7 <input type=radio name
+<form id="mainForm">
+  <!-- Text Input -->
+  <label for="myText01">Enter Your First Name: </label>
+  <input type="text" id="myText01" value="Ethan"><br><br>
+
+  <!-- Checkboxes -->
+  <label><strong>Checkboxes:</strong></label><br>
+  <label><input type="checkbox" name="food" value="beef"> Beef</label><br>
+  <label><input type="checkbox" name="food" value="veggy"> Veggy</label><br><br>
+
+  <!-- Radio Buttons -->
+  <label><strong>Radio Buttons:</strong></label><br>
+  <label><input type="radio" name="myRad01" value="107.7"> 107.7</label><br>
+  <label><input type="radio" name="myRad01" value="83.5"> 83.5</label><br><br>
+
+  <!-- Hidden Field -->
+  <input type="hidden" id="myHidden01" value="secret_data"><br>
+
+  <!-- File Input -->
+  <label for="myFile01">File Upload: </label>
+  <input type="file" id="myFile01"><br><br>
+
+  <!-- Reset Button -->
+  <input type="reset" value="Reset Form"><br><br>
+
+  <!-- Submit Button -->
+  <input type="submit" value="Submit (Advanced)"><br><br>
+
+  <!-- Interactive Button -->
+  <input type="button" value="Click Me" onclick="{
+    document.getElementById('myArea01').value = 'Awesome! Button clicked successfully.';
+  }"><br><br>
+
+  <!-- Textarea -->
+  <label for="myArea01">Textarea:</label><br>
+  <textarea id="myArea01" cols="60" rows="5">wow</textarea><br><br>
+
+  <!-- Select Box -->
+  <label for="mySelect01">Select Box:</label><br>
+  <select id="mySelect01" size="2" onchange="{
+    document.getElementById('myArea01').value = 'Selected option: ' + this.value;
+  }">
+    <option value="myOne">One</option>
+    <option value="myTwo">Two</option>
+    <option value="myThree">Three</option>
+  </select>
+</form>
